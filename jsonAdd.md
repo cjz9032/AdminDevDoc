@@ -32,8 +32,8 @@
 | 方法名 | 返回值类型 | 参数 | 描述 |
 | - | - | - | - |
 | _trigger | void | ev:Object , type:String | 事件触发器 |
-| doAddItem | Void |无 | 点击增加 |
-| _addItem | Void | 无 | 增加一个值 |
+| doAddItem | Void |ev:Object | 点击增加(todo) |
+| _addItem | Void | key:String,val:String | 增加一个值(todo) |
 | _getValIptVM | Void | 无 | 获取键输入框VM |
 | _getKeyIptVM | Void | 无 | 获取值输入框VM |
 | _clrIpt | Void | 无 | 清空输入框 |
@@ -64,39 +64,80 @@ vm : Object - 当前组件的vm
 ev : Object - 触发的事件对象
 type : string - 触发的事件类型
 
-* #### _renderContent
+* #### doAddItem
 + 描述
-渲染插入点, 返回插入点的html内容, 以html过滤器显示
+用户点击添加键值对
 + 参数
-idx : Number - 要渲染的插入点的index
+ev:Object-触发事件对象
 + 返回值
-String - 该插入点的html字符串
-
-* #### _clickPanel
+无
+* #### _addItem
 + 描述
-面板点击展开收拢事件
+内部添加方法
 + 参数
-ev : Object - 触发的事件对象
-idx : Number - 点击的面板的index
-
-* #### _setSelect
-+ 描述
-设置选中项
-+ 参数
-href : String - 要选中项的href
-
-* #### setActive
-+ 描述
-设置激活项
-+ 参数
-idx : Number - 要展开的项的index
+key:String,键,val:String:值
 + 返回值
-当前调用该方法的对象
-
-* #### getActive
+无
+* #### _getValIptVM
 + 描述
-获取当前展开项index
+获取值输入框VM,存储以使用
 + 参数
-idx : Number - 要激活的项的index
+无
 + 返回值
-Number - 当前激活项的index
+无
+* #### _getKeyIptVM
++ 描述
+获取键输入框VM,存储以使用
++ 参数
+无
++ 返回值
+无
+
+* #### _clrIpt
++ 描述
+清空输入框
++ 参数
+无
++ 返回值
+无
+
+* #### _clrEnv
++ 描述
+清空输入框 , value
++ 参数
+无
++ 返回值
+无
+
+* #### setValue
++ 描述
+表单设值,后端交互用String的json
++ 参数
+val:string-json,isReadonly:Boolean	
++ 返回值
+无
+
+* #### getValue
++ 描述
+表单取值,后端交互用String的json
++ 参数
+无
++ 返回值
+string-json
+
+* #### setData
++ 描述
+设值,直接以json返回
++ 参数
+ [{keyName,valName}...] 
++ 返回值
+无
+
+* #### getData
++ 描述
+取值,直接读取json 
++ 参数
+无
+[{keyName,valName}...] 
+
+
