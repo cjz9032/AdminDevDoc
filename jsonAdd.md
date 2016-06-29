@@ -1,15 +1,15 @@
 [toc]
 
-#sidebar 侧边折叠导航栏
+#jsonAdd 侧边折叠导航栏
 > Version 1.0.0
-> Update 2016年6月24日
+> Update 2016年6月29日
 
 ##API 文档
 
 ###属性
 | 属性名 | 类型 | 描述 |
 | - | - | - |
-| active | Number | 当前展开项的index |
+| keyName | String | 当前展开项的index |
 | data | Array:Objcet | 面板对象数据源 |
 | > _select | Boolean | 当前项是否选中 |
 | > text | String | 当前折叠项的文字描述 |
