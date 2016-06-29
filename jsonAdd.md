@@ -21,6 +21,8 @@
 | isValid | Boolean | 是否正在验证 |
 | $keyIptVm | VM | 键输入框 |
 | $valIptVm | VM | 值输入框 |
+| formName | string | 写入,提交名 |
+| submitName | string | 提交名(优先) |
 
 ###事件
 | 方法名 | 类型 | 传入参数 | 描述 |
