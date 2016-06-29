@@ -1,94 +1,94 @@
 [toc]
 
-#sidebar ²à±ßÕÛµşµ¼º½À¸
+#sidebar ä¾§è¾¹æŠ˜å å¯¼èˆªæ 
 > Version 1.0.0
-> Update 2016Äê6ÔÂ24ÈÕ
+> Update 2016å¹´6æœˆ24æ—¥
 
-##API ÎÄµµ
+##API æ–‡æ¡£
 
-###ÊôĞÔ
-| ÊôĞÔÃû | ÀàĞÍ | ÃèÊö |
+###å±æ€§
+| å±æ€§å | ç±»å‹ | æè¿° |
 | - | - | - |
-| active | Number | µ±Ç°Õ¹¿ªÏîµÄindex |
-| data | Array:Objcet | Ãæ°å¶ÔÏóÊı¾İÔ´ |
-| > _select | Boolean | µ±Ç°ÏîÊÇ·ñÑ¡ÖĞ |
-| > text | String | µ±Ç°ÕÛµşÏîµÄÎÄ×ÖÃèÊö |
-| > href | ?String | µ±Ç°ÏîµÄÁ´½Ó |
-| > children | Array:Objcet | ×ÓÏîÊı×é |
-| isInit | Boolean | ÊÇ·ñ³õÊ¼»¯Íê±Ï |
-| $allPanelBody | DOM:jQuery | ËùÓĞÃæ°åÖ÷Ìå |
+| active | Number | å½“å‰å±•å¼€é¡¹çš„index |
+| data | Array:Objcet | é¢æ¿å¯¹è±¡æ•°æ®æº |
+| > _select | Boolean | å½“å‰é¡¹æ˜¯å¦é€‰ä¸­ |
+| > text | String | å½“å‰æŠ˜å é¡¹çš„æ–‡å­—æè¿° |
+| > href | ?String | å½“å‰é¡¹çš„é“¾æ¥ |
+| > children | Array:Objcet | å­é¡¹æ•°ç»„ |
+| isInit | Boolean | æ˜¯å¦åˆå§‹åŒ–å®Œæ¯• |
+| $allPanelBody | DOM:jQuery | æ‰€æœ‰é¢æ¿ä¸»ä½“ |
 
-###ÊÂ¼ş
-| ·½·¨Ãû | ÀàĞÍ | ´«Èë²ÎÊı | ÃèÊö |
+###äº‹ä»¶
+| æ–¹æ³•å | ç±»å‹ | ä¼ å…¥å‚æ•° | æè¿° |
 | - | - | - | - |
-| onInit | sync | ev:Object , vm:Object | µ±×é¼şÄÚ²¿³õÊ¼»¯Íê±Ïºóµ÷¶È |
-| onChange | async | ev:Object , vm:Object | µ±×é¼ş¼¤»îÏî·¢Éú±ä»¯Ê±´¥·¢ |
+| onInit | sync | ev:Object , vm:Object | å½“ç»„ä»¶å†…éƒ¨åˆå§‹åŒ–å®Œæ¯•åè°ƒåº¦ |
+| onChange | async | ev:Object , vm:Object | å½“ç»„ä»¶æ¿€æ´»é¡¹å‘ç”Ÿå˜åŒ–æ—¶è§¦å‘ |
 
-###·½·¨
-| ·½·¨Ãû | ·µ»ØÖµÀàĞÍ | ²ÎÊı | ÃèÊö |
+###æ–¹æ³•
+| æ–¹æ³•å | è¿”å›å€¼ç±»å‹ | å‚æ•° | æè¿° |
 | - | - | - | - |
-| _trigger | void | ev:Object , type:String | ÊÂ¼ş´¥·¢Æ÷ |
-| _clickPanel | Void | ev:Object , idx:Number | Ãæ°åµã»÷Õ¹¿ªÊÕÂ£ÊÂ¼ş |
-| _setSelect | Void | href:String | ÉèÖÃÑ¡ÖĞÏî |
-| changeData | Number | newData:Object | ¸Ä±äµ±Ç°×é¼şµÄdataÊı¾İÔ´ |
-| setActive | this | idx:Number | ÉèÖÃÕ¹¿ªÏî |
-| getActive | Number |  | »ñÈ¡µ±Ç°Õ¹¿ªÏîindex |
+| _trigger | void | ev:Object , type:String | äº‹ä»¶è§¦å‘å™¨ |
+| _clickPanel | Void | ev:Object , idx:Number | é¢æ¿ç‚¹å‡»å±•å¼€æ”¶æ‹¢äº‹ä»¶ |
+| _setSelect | Void | href:String | è®¾ç½®é€‰ä¸­é¡¹ |
+| changeData | Number | newData:Object | æ”¹å˜å½“å‰ç»„ä»¶çš„dataæ•°æ®æº |
+| setActive | this | idx:Number | è®¾ç½®å±•å¼€é¡¹ |
+| getActive | Number |  | è·å–å½“å‰å±•å¼€é¡¹index |
 
-### ÊÂ¼şÏêÇé
+### äº‹ä»¶è¯¦æƒ…
 * #### onInit
-+ ÃèÊö
-µ±×é¼şÄÚ²¿³õÊ¼»¯Íê±Ïºóµ÷¶È
-+ ²ÎÊı
-ev : Object - ´¥·¢µÄÊÂ¼ş¶ÔÏó
-vm : Object - µ±Ç°×é¼şµÄvm
++ æè¿°
+å½“ç»„ä»¶å†…éƒ¨åˆå§‹åŒ–å®Œæ¯•åè°ƒåº¦
++ å‚æ•°
+ev : Object - è§¦å‘çš„äº‹ä»¶å¯¹è±¡
+vm : Object - å½“å‰ç»„ä»¶çš„vm
 
 * #### onChanged
-+ ÃèÊö
-µ±×é¼ş¼¤»îÏî·¢Éú±ä»¯Ê±´¥·¢
-+ ²ÎÊı
-vm : Object - µ±Ç°×é¼şµÄvm
++ æè¿°
+å½“ç»„ä»¶æ¿€æ´»é¡¹å‘ç”Ÿå˜åŒ–æ—¶è§¦å‘
++ å‚æ•°
+vm : Object - å½“å‰ç»„ä»¶çš„vm
 
-### ·½·¨ÏêÇé
+### æ–¹æ³•è¯¦æƒ…
 * #### _trigger
-+ ÃèÊö
-ÊÂ¼ş´¥·¢Æ÷, ´¥·¢Íâ²¿ÊÂ¼ş
-+ ²ÎÊı
-ev : Object - ´¥·¢µÄÊÂ¼ş¶ÔÏó
-type : string - ´¥·¢µÄÊÂ¼şÀàĞÍ
++ æè¿°
+äº‹ä»¶è§¦å‘å™¨, è§¦å‘å¤–éƒ¨äº‹ä»¶
++ å‚æ•°
+ev : Object - è§¦å‘çš„äº‹ä»¶å¯¹è±¡
+type : string - è§¦å‘çš„äº‹ä»¶ç±»å‹
 
 * #### _renderContent
-+ ÃèÊö
-äÖÈ¾²åÈëµã, ·µ»Ø²åÈëµãµÄhtmlÄÚÈİ, ÒÔhtml¹ıÂËÆ÷ÏÔÊ¾
-+ ²ÎÊı
-idx : Number - ÒªäÖÈ¾µÄ²åÈëµãµÄindex
-+ ·µ»ØÖµ
-String - ¸Ã²åÈëµãµÄhtml×Ö·û´®
++ æè¿°
+æ¸²æŸ“æ’å…¥ç‚¹, è¿”å›æ’å…¥ç‚¹çš„htmlå†…å®¹, ä»¥htmlè¿‡æ»¤å™¨æ˜¾ç¤º
++ å‚æ•°
+idx : Number - è¦æ¸²æŸ“çš„æ’å…¥ç‚¹çš„index
++ è¿”å›å€¼
+String - è¯¥æ’å…¥ç‚¹çš„htmlå­—ç¬¦ä¸²
 
 * #### _clickPanel
-+ ÃèÊö
-Ãæ°åµã»÷Õ¹¿ªÊÕÂ£ÊÂ¼ş
-+ ²ÎÊı
-ev : Object - ´¥·¢µÄÊÂ¼ş¶ÔÏó
-idx : Number - µã»÷µÄÃæ°åµÄindex
++ æè¿°
+é¢æ¿ç‚¹å‡»å±•å¼€æ”¶æ‹¢äº‹ä»¶
++ å‚æ•°
+ev : Object - è§¦å‘çš„äº‹ä»¶å¯¹è±¡
+idx : Number - ç‚¹å‡»çš„é¢æ¿çš„index
 
 * #### _setSelect
-+ ÃèÊö
-ÉèÖÃÑ¡ÖĞÏî
-+ ²ÎÊı
-href : String - ÒªÑ¡ÖĞÏîµÄhref
++ æè¿°
+è®¾ç½®é€‰ä¸­é¡¹
++ å‚æ•°
+href : String - è¦é€‰ä¸­é¡¹çš„href
 
 * #### setActive
-+ ÃèÊö
-ÉèÖÃ¼¤»îÏî
-+ ²ÎÊı
-idx : Number - ÒªÕ¹¿ªµÄÏîµÄindex
-+ ·µ»ØÖµ
-µ±Ç°µ÷ÓÃ¸Ã·½·¨µÄ¶ÔÏó
++ æè¿°
+è®¾ç½®æ¿€æ´»é¡¹
++ å‚æ•°
+idx : Number - è¦å±•å¼€çš„é¡¹çš„index
++ è¿”å›å€¼
+å½“å‰è°ƒç”¨è¯¥æ–¹æ³•çš„å¯¹è±¡
 
 * #### getActive
-+ ÃèÊö
-»ñÈ¡µ±Ç°Õ¹¿ªÏîindex
-+ ²ÎÊı
-idx : Number - Òª¼¤»îµÄÏîµÄindex
-+ ·µ»ØÖµ
-Number - µ±Ç°¼¤»îÏîµÄindex
++ æè¿°
+è·å–å½“å‰å±•å¼€é¡¹index
++ å‚æ•°
+idx : Number - è¦æ¿€æ´»çš„é¡¹çš„index
++ è¿”å›å€¼
+Number - å½“å‰æ¿€æ´»é¡¹çš„index
