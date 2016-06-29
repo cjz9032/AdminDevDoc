@@ -9,31 +9,39 @@
 ###属性
 | 属性名 | 类型 | 描述 |
 | - | - | - |
-| keyName | String | 当前展开项的index |
-| data | Array:Objcet | 面板对象数据源 |
-| > _select | Boolean | 当前项是否选中 |
-| > text | String | 当前折叠项的文字描述 |
-| > href | ?String | 当前项的链接 |
-| > children | Array:Objcet | 子项数组 |
+| value | Array:{keyName,valName} | 值 |
+| >keyName | String | ID键名 |
+| >valName | String | 值键名 |
+| must | Boolean | 必选(todo) |
+| tip | String | 提示文字 |
+| isHide | Boolean | 显示 |
+| placeholder | String | 输入框内提示 |
+| readonly | Boolean | 只读 |
 | isInit | Boolean | 是否初始化完毕 |
-| $allPanelBody | DOM:jQuery | 所有面板主体 |
+| isValid | Boolean | 是否正在验证 |
+| $keyIptVm | VM | 键输入框 |
+| $valIptVm | VM | 值输入框 |
 
 ###事件
 | 方法名 | 类型 | 传入参数 | 描述 |
 | - | - | - | - |
 | onInit | sync | ev:Object , vm:Object | 当组件内部初始化完毕后调度 |
-| onChange | async | ev:Object , vm:Object | 当组件激活项发生变化时触发 |
+| onChange | async | ev:Object , vm:Object | 当组件值发生变化时触发 |
 
 ###方法
 | 方法名 | 返回值类型 | 参数 | 描述 |
 | - | - | - | - |
 | _trigger | void | ev:Object , type:String | 事件触发器 |
-| _clickPanel | Void | ev:Object , idx:Number | 面板点击展开收拢事件 |
-| _setSelect | Void | href:String | 设置选中项 |
-| changeData | Number | newData:Object | 改变当前组件的data数据源 |
-| setActive | this | idx:Number | 设置展开项 |
-| getActive | Number |  | 获取当前展开项index |
-
+| doAddItem | Void |无 | 点击增加 |
+| _addItem | Void | 无 | 增加一个值 |
+| _getValIptVM | Void | 无 | 获取键输入框VM |
+| _getKeyIptVM | Void | 无 | 获取值输入框VM |
+| _clrIpt | Void | 无 | 清空输入框 |
+| _clrEnv | Void | 无 | 清空输入框以及value |
+| setValue | Void | val:string-json,isReadonly:Boolean | 表单设值 |
+| getValue | string-json | 无 | 表单取值 |
+| setData | Void | val:json | 设值 |
+| getData | json | 无 | 取值 |
 ### 事件详情
 * #### onInit
 + 描述
