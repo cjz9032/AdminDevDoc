@@ -1,6 +1,6 @@
 [toc]
 
-#checkboxGroup 侧边折叠导航栏
+#letterList 字母列表--单选(用于listSelect)
 > Version 1.0.0
 > Update 2016年6月30日
 
@@ -9,24 +9,20 @@
 ###属性
 | 属性名 | 类型 | 描述 |
 | - | - | - |
-| data | Array:{text,value,_checked} | 值 |
-| >idName | String |  值 |
-| >textName | String | 文本 |
-| must | Boolean | 必选 |
-| tip | String | 提示文字 |
-| readonly | Boolean | 只读 |
+| q | string | 过滤关键字 |
+| data | Array:{text,value,_select} | 显示过滤后的值 |
+| $originData | Array:{text,value,_select,pic} | 原始值 |
+| >textName | string | 显示键名 |
+| >keyName | string | 唯一键名 |
+| >picName | string | 图标键名 |
+| hasPic | Boolean | 是否有图标 |
+| tmpActiveItem | Boolean | 选中的项(todo) |
 | isInit | Boolean | 是否初始化完毕 |
-| isValid | Boolean | 是否正在验证 |
-| validInfo | Boolean | 错误信息 |
-| formName | string | 写入,提交名 |
-
 ###事件
 | 方法名 | 类型 | 传入参数 | 描述 |
 | - | - | - | - |
 | onInit | sync | ev:Object , vm:Object | 当组件内部初始化完毕后调度 |
-| onChecked | async | ev:Object , vm:Object | 单复选选中 |
-| onCancel | async | ev:Object , vm:Object | 当复选框取消 |
-| onChange | async | ev:Object , vm:Object | 当组件值发生变化时触发 |
+| onClickBefore | sync | ev:Object , vm:Object | 当点击前 |
 
 ###方法
 | 方法名 | 返回值类型 | 参数 | 描述 |
