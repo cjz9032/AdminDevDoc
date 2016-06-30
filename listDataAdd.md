@@ -1,6 +1,6 @@
 [toc]
 
-#listSelect (包含letterlist)
+#listDataAdd (左右移动选择框)
 > Version 1.0.0
 > Update 2016年6月29日
 
