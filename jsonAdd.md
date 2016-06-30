@@ -1,4 +1,4 @@
-[toc]
+﻿[toc]
 
 #jsonAdd 侧边折叠导航栏
 > Version 1.0.0
