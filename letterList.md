@@ -12,8 +12,9 @@
 | q | string | 过滤关键字 |
 | data | Array:{text,value,_select} | 显示过滤后的值 |
 | $originData | Array:{text,value,_select,pic} | 原始值 |
+| >idName | string | 唯一键名 |
 | >textName | string | 显示键名 |
-| >keyName | string | 唯一键名 |
+| >keyName | string | 字母键名 |
 | >picName | string | 图标键名 |
 | hasPic | Boolean | 是否有图标 |
 | tmpActiveItem | Boolean | 选中的项(todo) |
