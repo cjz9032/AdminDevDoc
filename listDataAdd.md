@@ -9,7 +9,7 @@
 ###属性
 | 属性名 | 类型 | 描述 |
 | - | - | - |
-| text | String | 显示文字 |
+| idName | String | 显示文字 |
 | value | String | 提交值 |
 | must | Boolean | 必选(todo) |
 | tip | String | 提示文字 |
