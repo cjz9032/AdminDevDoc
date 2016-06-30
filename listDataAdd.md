@@ -110,3 +110,10 @@ flag:Boolean,position:String
 + 返回值
 无
 
+* #### setData
++ 描述
+设待选项,参数data 以checked区分
++ 参数
+Array:data
++ 返回值
+无
