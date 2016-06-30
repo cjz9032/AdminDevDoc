@@ -28,13 +28,13 @@
 | 方法名 | 返回值类型 | 参数 | 描述 |
 | - | - | - | - |
 | _trigger | void | ev:Object , type:String | 事件触发器 |
-| doSetCheckbox | Void |ev:Object,item:data>item| 点击选中(todo) |
-| _setCheckedState | Void | item:data>item | 选中(todo) |
-| _setCheckedStateById | Void | val:String | 选中(todo) |
-| setValue | Void | val:string | 表单设值 |
-| getValue | string-json | 无 | 表单取值 |
-| setData | Void | val:json | 设值(todo) |
-| getData | json | 无 | 取值(todo getCheckedData) |
+| doSelect | Void |ev:Object,item:data>item| 点击选中(todo) |
+| _select | Void | item:data>item | 选中(todo) |
+| _clrTmp | Void | 无 | 清楚选中(todo) |
+| getSelect | data.item | 无 | 取选中 |
+| setSelect | Void | id:string | 设选中(todo) |
+| setData | Void | val:json | 设值 |
+| getData | json | 无 | 取值(todo) |
 ### 事件详情
 * #### onInit
 + 描述
