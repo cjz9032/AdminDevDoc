@@ -37,16 +37,10 @@
 | 方法名 | 返回值类型 | 参数 | 描述 |
 | - | - | - | - |
 | _trigger | void | ev:Object , type:String | 事件触发器 |
-| doAddItem | Void |ev:Object | 点击增加(todo) |
-| _addItem | Void | key:String,val:String | 增加一个值(todo) |
-| _getValIptVM | Void | 无 | 获取键输入框VM |
-| _getKeyIptVM | Void | 无 | 获取值输入框VM |
-| _clrIpt | Void | 无 | 清空输入框 |
-| _clrEnv | Void | 无 | 清空输入框以及value |
-| setValue | Void | val:string-json,isReadonly:Boolean | 表单设值 |
-| getValue | string-json | 无 | 表单取值 |
-| setData | Void | val:json | 设值 |
-| getData | json | 无 | 取值 |
+| clickIpt | Void |ev:Object | 点击输入框(todo) |
+| dataSelect | Void | data.item | 增加一个值(todo) |
+| setValue | Void | text:string | 表单设值 |
+| getValue | val:string | 无 | 表单取值 |
 ### 事件详情
 * #### onInit
 + 描述
