@@ -1,6 +1,6 @@
 [toc]
 
-#jsonAdd 侧边折叠导航栏
+#listSelect (包含letterlist)
 > Version 1.0.0
 > Update 2016年6月29日
 
@@ -9,18 +9,20 @@
 ###属性
 | 属性名 | 类型 | 描述 |
 | - | - | - |
-| value | Array:{keyName,valName} | 值 |
-| >keyName | String | ID键名 |
-| >valName | String | 值键名 |
+| text | String | 显示文字 |
+| value | String | 提交值 |
 | must | Boolean | 必选(todo) |
 | tip | String | 提示文字 |
-| isHide | Boolean | 显示 |
-| placeholder | String | 输入框内提示 |
 | readonly | Boolean | 只读 |
 | isInit | Boolean | 是否初始化完毕 |
 | isValid | Boolean | 是否正在验证 |
-| $keyIptVm | VM | 键输入框 |
-| $valIptVm | VM | 值输入框 |
+| $list_opt | Object | letterlist配置 |
+| data | Array-{textName,idName,_selected} | 待选项 |
+| dataSelect | data.item | 选中项 |
+| >textName | string | 文本键名 |
+| >idName | string | 值键名 |
+| >_selected | Boolean | 选中 |
+| $data_opt | Object{textName,idName} | data配置 |
 | formName | string | 写入,提交名 |
 | submitName | string | 提交名(优先) |
 
