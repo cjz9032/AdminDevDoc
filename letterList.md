@@ -22,6 +22,7 @@
 | 方法名 | 类型 | 传入参数 | 描述 |
 | - | - | - | - |
 | onInit | sync | ev:Object , vm:Object | 当组件内部初始化完毕后调度 |
+| onChanged | async | ev:Object , vm:Object | 选中变化(todo) |
 | onClickBefore | sync | ev:Object , vm:Object | 当点击前 |
 
 ###方法
@@ -43,23 +44,16 @@
 ev : Object - 触发的事件对象
 vm : Object - 当前组件的vm
 
-* #### onChecked
+* #### onClickBefore
 + 描述
-当单复选框选中
-+ 参数
-ev : Object - 触发的事件对象
-vm : Object - 当前组件的vm
-
-* #### onCancel
-+ 描述
-当复选框取消
+选中之前,可以retuan false取消
 + 参数
 ev : Object - 触发的事件对象
 vm : Object - 当前组件的vm
 
 * #### onChanged
 + 描述
-当组件值发生变化时触发
+当选中发生变化时触发
 + 参数
 ev : Object - 触发的事件对象
 vm : Object - 当前组件的vm
@@ -74,7 +68,7 @@ vm : Object - 当前组件的vm
 ev : Object - 触发的事件对象
 type : string - 触发的事件类型
 
-* #### doSetCheckbox
+* #### doSelect
 + 描述
 点击选中
 + 参数
@@ -82,36 +76,38 @@ ev:Object-触发事件对象
 item:data>item
 + 返回值
 无
-* #### _setCheckbox
+
+* #### _select
 + 描述
 设置选中,do的调用
 + 参数
 item:data>item
 + 返回值
 无
-* #### _setCheckboxById
+
+* #### _clrTmp
 + 描述
-设置选中,通过唯一键
+清除选中
 + 参数
-val:string
+无
 + 返回值
 无
  
-* #### setValue
+* #### getSelect
 + 描述
-表单设值
+获取选择项
 + 参数
-val:string
+无
 + 返回值
 无
 
-* #### getValue
+* #### setSelect
 + 描述
-表单取值
+设置选中项
 + 参数
-无
+id:string
 + 返回值
-val:string
+无
 
 * #### setData
 + 描述
