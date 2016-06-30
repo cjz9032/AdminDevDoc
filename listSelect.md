@@ -30,7 +30,8 @@
 | 方法名 | 类型 | 传入参数 | 描述 |
 | - | - | - | - |
 | onInit | sync | ev:Object , vm:Object | 当组件内部初始化完毕后调度 |
-| onChange | async | ev:Object , vm:Object | 当组件值发生变化时触发 |
+| onClicked | async | ev:Object , vm:Object | 当点击输入框 |
+| onChange | async | ev:Object , vm:Object | 当值发生变化时触发 |
 
 ###方法
 | 方法名 | 返回值类型 | 参数 | 描述 |
