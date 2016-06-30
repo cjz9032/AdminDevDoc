@@ -49,9 +49,15 @@
 ev : Object - 触发的事件对象
 vm : Object - 当前组件的vm
 
+* #### onClicked
++ 描述
+点击输入框
++ 参数
+vm : Object - 当前组件的vm
+
 * #### onChanged
 + 描述
-当组件激活项发生变化时触发
+当值发生变化
 + 参数
 vm : Object - 当前组件的vm
 
@@ -63,80 +69,36 @@ vm : Object - 当前组件的vm
 ev : Object - 触发的事件对象
 type : string - 触发的事件类型
 
-* #### doAddItem
+* #### clickIpt
 + 描述
-用户点击添加键值对
+点击输入框
 + 参数
 ev:Object-触发事件对象
 + 返回值
 无
-* #### _addItem
+
+* #### dataSelect
 + 描述
 内部添加方法
 + 参数
-key:String,键,val:String:值
-+ 返回值
-无
-* #### _getValIptVM
-+ 描述
-获取值输入框VM,存储以使用
-+ 参数
-无
-+ 返回值
-无
-* #### _getKeyIptVM
-+ 描述
-获取键输入框VM,存储以使用
-+ 参数
-无
-+ 返回值
-无
-
-* #### _clrIpt
-+ 描述
-清空输入框
-+ 参数
-无
-+ 返回值
-无
-
-* #### _clrEnv
-+ 描述
-清空输入框 , value
-+ 参数
-无
+data.item--{text,val,_selected}
 + 返回值
 无
 
 * #### setValue
 + 描述
-表单设值,后端交互用String的json
+表单设值,只设定text,val还是空
 + 参数
-val:string-json,isReadonly:Boolean	
+val:string
 + 返回值
 无
 
 * #### getValue
 + 描述
-表单取值,后端交互用String的json
+表单取值
 + 参数
 无
 + 返回值
-string-json
-
-* #### setData
-+ 描述
-设值,直接以json返回
-+ 参数
- [{keyName,valName}...] 
-+ 返回值
-无
-
-* #### getData
-+ 描述
-取值,直接读取json 
-+ 参数
-无
-[{keyName,valName}...] 
+val:string
 
 
